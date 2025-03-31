@@ -1,0 +1,202 @@
+html{
+	background-image:url("background.png.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-attachment:fixed;
+}
+
+.lesechecs{
+	width : 101.3%;
+	margin-left :-10px;
+	margin-top :-10px;
+	z-index:20;
+}
+
+
+.haut{
+	position:fixed;
+	top:2%;
+	left:5%;
+	width:30%;
+	z-index:100;
+}
+
+.lespieces{
+	font-size:1.5cm;
+	position:fixed;
+	top:3%;
+	left:40%;
+	width:20%;
+	height:5%;
+	z-index:10;
+}
+
+.découvrir{
+	position:fixed;
+	top:3%;
+	left:55%;
+	width:35%;
+	height:5%;
+	z-index:10;
+	font-size:1.5cm;
+}
+.Football
+{
+	position:fixed;
+	top:3%;
+	left:85%;
+	width:35%;
+	height:5%;
+	z-index:10;
+	font-size:1.5cm;	
+}
+p{
+	font-size:50;
+    color:white
+}
+
+.arrplan{
+    background-color: black;
+	position:fixed;
+	top:0%;
+	left:0%;
+	width:100%;
+	height:18%;
+	z-index:10;
+}
+
+
+
+
+
+
+
+
+.retour{
+    background-color:#000000;
+	font-size:0.8cm;
+	position:fixed;
+	top:5%;
+	left:5%;
+	width:16%;
+	height:5%;
+	z-index:10;
+}
+
+.lespiecespng{
+    background-color:#000000;
+	position:fixed;
+	top:5%;
+	left:40%;
+	width:20%;
+	z-index:100;
+
+}
+
+.roi
+{
+	position:absolute;
+	top:115px;
+	left:25px;
+	width:800px;
+	height:800px;
+	background:url("roi.jpg");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+.roi:hover
+{
+	background:url("leroi.png");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+
+.reine
+{
+	position:absolute;
+	top:115px;
+	left:475px;
+	width:800px;
+	height:800px;
+	background:url("reine.jpg");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+.reine:hover
+{
+	background:url("lareine.png");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+
+.pion
+{
+	position:absolute;
+	top:115px;
+	left:925px;;
+	width:800px;
+	height:800px;
+	background:url("pion.jpg");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+.pion:hover
+{
+	background:url("lepion.png");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+
+.tour
+{
+	position:absolute;
+	top:550px;
+	left:25px;
+	width:800px;
+	height:800px;
+	background:url("tour.jpg");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+.tour:hover
+{
+	background:url("latour.png");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+
+.fou
+{
+	position:absolute;
+	top:550px;
+	left:475px;;
+	width:800px;
+	height:800px;
+	background:url("fou.jpg");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+.fou:hover
+{
+	background:url("lefou.png");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+
+.cheval
+{
+	position:absolute;
+	top:550px;
+	left:925px;
+	width:800px;
+	height:800px;
+	background:url("cheval.jpg");
+	background-repeat:no-repeat;
+	background-size:50%;
+}
+.cheval:hover
+{
+	background:url("lecavalier.png");
+	background-repeat:no-repeat;
+	background-size:50%;
+}

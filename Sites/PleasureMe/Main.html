@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>MySite</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="Images/Logo.svg">
+        <link href="CSS/Main.css" rel="stylesheet">
+        <script src="JS/Main.js" defer></script>
+
+
+		<!--FONTS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <button id="BtnWelcome"><h1 class="SiteTitle text">Pleasure.me</h1></button>
+            <nav>
+            	<div class="BtnPageDiscover">
+					<button id="BtnPageDiscover" class="DiscoverMenu text medium">
+						Discover<img src="Images/arrow.svg"/>
+					</button>
+					<div class="dropdownmenu">
+						<a href="javascript:ChangePage(1,'#CocktailsAnchor');" class="text medium">COCKTAILS</a>
+						<a href="javascript:ChangePage(1,'#StartersAnchor');" class="text medium">STARTERS</a>
+						<a href="javascript:ChangePage(1,'#MainCoursesAnchor');" class="text medium">MAIN COURSES</a>
+						<a href="javascript:ChangePage(1,'#DessertsAnchor');" class="text medium">DESSERTS</a>
+					</div>
+				</div>
+            	<button id="BtnPageSelection" class="text medium">Our Selection</button>
+            	<button id="BtnPageAbout" class="text medium">About Us</button>
+            </nav>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="Images/Icons.png" class="Icons"/></a>
+        </header>
+        
+        <section id="page0">
+        	<h2 class="text bold Title">Wanna start livin’?</h2>
+        	<p class="text medium presentation" style="padding: 0;">Join on us a sensual journey around the world, and be ready to be amazed<br/> by our selection of exquisite alcoholic drinks & dishes.<br/>Enjoy!</p>
+			<button class="btnSuprise text bold" onclick="ChangePage(5)">Surprise me !</button>
+        </section>
+        
+		<section id="page1" style="display:none;height:calc(100% - 190px);">
+        	<div style="width: 1400px;height: 100%;">
+				<h2 class="text bold" style="font-size:80px;">Discover</h2>
+
+				<h2 id="CocktailsAnchor" class="text bold" style="font-size:60px;text-align: left;text-decoration: underline;">COCKTAILS</h2>
+				<div class="FoodBox">
+					<food-card src="Images/Food/Margarita img.png" text="Margarita"></food-card>
+					<food-card src="Images/Food/Zombie img.png" text="Zombie"></food-card>
+					<food-card src="Images/Food/Adios MF img.png" text="Adios MF"></food-card>
+					<plus-card></plus-card>
+				</div>
+
+				<h2 id="StartersAnchor" class="text bold" style="font-size:60px;text-align: left;text-decoration: underline;">STARTERS</h2>
+				<div class="FoodBox">
+					<food-card src="Images/Food/Whiskey-glazed shrimp img.png" text="Whiskey-glazed shrimp"></food-card>
+					<food-card src="Images/Food/Vodka oysters img.png" text="Vodka-infused oysters"></food-card>
+					<food-card src="Images/Food/Brandy-flamed chorizo.png" text="Brandy-flamed chorizo"></food-card>
+					<plus-card></plus-card>
+				</div>
+
+				<h2 id="MainCoursesAnchor" class="text bold" style="font-size:60px;text-align: left;text-decoration: underline;">MAIN COURSES</h2>
+				<div class="FoodBox">
+					<food-card src="Images/Food/Beef bourguignon img.png" text="Beef Bourguignon"></food-card>
+					<food-card src="Images/Food/Penne alla vodka img.png" text="Penne alla vodka"></food-card>
+					<food-card src="Images/Food/Chicon à la bière img.png" text="Chicons à la bière"></food-card>
+					<plus-card></plus-card>
+				</div>
+
+				<h2 id="DessertsAnchor" class="text bold" style="font-size:60px;text-align: left;text-decoration: underline;">DESSERTS</h2>
+				<div class="FoodBox">
+					<food-card src="Images/Food/Baba au rhum img.png" text="Rum Baba"></food-card>
+					<food-card src="Images/Food/Tiramisu img.png" text="Tiramisu"></food-card>
+					<food-card src="Images/Food/Crêpe Suzette img.png" text="Crêpes Suzette"></food-card>
+					<plus-card></plus-card>
+				</div>
+
+				<h2><br/></h2>
+			</div>
+			
+        </section>
+		<section id="page2" style="display:none;height:calc(100% - 190px);">
+			<div style="width: calc(100% - 300px);height: 100%;display:block;justify-content:center;">
+				<div style="margin-bottom: 80px;">
+					<h2 class="text bold" style="font-size: 80px;">Our selection of marvels</h2>
+					<h2 class="text medium" style="font-size: 40px;">If you’re looking for the right alcohol for your dish or cocktail, or simply to drink, you’re at the right place!Discover our selection of the best beverages :</h2>
+				</div>
+				<div class="GridAlcohol">
+					<img src="Images/Alcohol/Wines.png" style="grid-row: 1; grid-column: 1 / span 2;width: 1035px;height: 466.5px;cursor: pointer;" onclick="ChangePage(4)"/>
+					<box-card src="Images/Alcohol/Beers.png"></box-card>
+					<box-card src="Images/Alcohol/Brandys.png"></box-card>
+					<box-card src="Images/Alcohol/Gins.png"></box-card>
+					<box-card src="Images/Alcohol/Rums.png"></box-card>
+					<box-card src="Images/Alcohol/Tequilas.png"></box-card>
+					<box-card src="Images/Alcohol/Vodkas.png"></box-card>
+					<box-card src="Images/Alcohol/Whiskeys.png"></box-card>
+					<box-card src="Images/Alcohol/Liqueurs.png"></box-card>
+				</div>
+				<div>
+					<h2><br/></h2>
+				</div>
+			</div>
+		</section>
+
+        <section id="pageRecip" style="display:none;height:calc(100% - 190px);">
+       		<div class="Recipe">
+				<h2 class="text2 bold" style="font-size: 90px; text-shadow:  3px 3px #ffffff,-3px 3px #ffffff,3px -3px #ffffff, -3px -3px #ffffff;">The Advocaat</h2>
+
+				<div class="GridRecipe">
+					
+					<div class="e1">
+						<h2 class="text2 medium montagu-slab" style="font-size: 1.4rem;margin: 0;width: calc(100% - 63px);"><span class="oleo-script-swash-caps-regular">Advocaat</span>, a distinguished liqueur of Dutch origin, offers a refined indulgence for those with a penchant for the finer things in life. With its velvety texture and harmonious blend of aged <a href="javascript:ChangePage(2);" class="text2 montagu-slab bold" style="text-decoration: underline;">brandy</a>, fresh eggs, sugar, and vanilla, this luxurious beverage has been a symbol of opulence since its inception in the 17th century.
+							Not to be confused with the more common eggnog, Advocaat is revered for its rich consistency and its sophisticated balance of sweetness and brandy warmth. Its delightful viscosity and gentle complexity make it the ideal companion for those seeking a smooth, sumptuous drink that elevates any occasion.
+							Traditionally enjoyed neat or over ice, Advocaat is also a remarkable ingredient for crafting sophisticated cocktails or as a decadent addition to desserts. Its allure extends beyond mere consumption; it serves as a versatile companion to a fine meal or a delightful after-dinner treat, often accompanying artisanal pastries or delicate confections.
+							For the discerning connoisseur, Advocaat offers an unparalleled sensory experience - a testament to craftsmanship and heritage, perfect for those who appreciate the subtle elegance of a well-crafted libation. <br/>Warning! Alcohol abuse harms your health!</h2>
+					</div>
+					
+					<div class="e2">
+						<img src="Images/ImageAdvocaat.png" style="height: 100;width: 100%;"/>
+					</div>
+					
+					<div class="e3">
+						<select id="nbperson" class="text bold selectPers">
+							<option value=1>FOR 1 PERSON</option>
+							<option value=2>FOR 2 PERSONS</option>
+							<option value=3>FOR 3 PERSONS</option>
+							<option value=4>FOR 4 PERSONS</option>
+							<option value=5>FOR 5 PERSONS</option>
+							<option value=6>FOR 6 PERSONS</option>
+							<option value=7>FOR 7 PERSONS</option>
+							<option value=8>FOR 8 PERSONS</option>
+							<option value=9>FOR 9 PERSONS</option>
+							<option value=10>FOR 10 PERSONS</option>
+							<option value=11>FOR 11 PERSONS</option>
+							<option value=12>FOR 12 PERSONS</option>
+							<option value=13>FOR 13 PERSONS</option>
+							<option value=14>FOR 14 PERSONS</option>
+							<option value=15>FOR 15 PERSONS</option>
+						</select>
+					</div>
+
+					<div class="e4">
+						<h2 id="recette" class="text2 medium montagu-slab" style="font-size: 30px;margin: 0;">
+							•1 large egg<br/>
+							•30g (2 tablespoons) granulated sugar<br/>
+							•45ml <a href="javascript:ChangePage(2);" class="text2 montagu-slab bold" style="text-decoration: underline;">brandy</a><br/>
+							•1/4 teaspoon vanilla extract<br/>
+							•A pinch of salt<br/>
+						</h2>
+					</div>
+					
+					<div class="e5">
+						<a href="javascript:ChangePage(2);"><img src="Images/InfoFrame.png" style="height: 100;width: 100%;"/></a>
+					</div>
+					
+					<div class="e6">
+						<h2 class="text2 medium montagu-slab" style="font-size: 30px;margin: 0;width: calc(100% - 74px);">
+
+							<span class="oleo-script-swash-caps-bold" style="font-size: 70px;">Instructions</span>
+							<br/><br/><br/><br/>
+
+							<strong>Prepare the Base:</strong><br/>
+							In a mixing bowl, whisk the egg and sugar together until the mixture becomes smooth and slightly frothy. This will form the base of your Advocaat.<br/><br/>
+
+							<strong>Infuse the Flavors:</strong><br/>
+							Add the brandy (or your preferred mix of brandy and neutral spirit) to the egg-sugar mixture, along with the vanilla extract. Stir gently to combine. If using vanilla bean-infused brandy, the flavor will be richer and more aromatic.<br/><br/>
+
+							<strong>Optional Touches:</strong><br/>
+							For added depth, include a pinch of salt. You may also infuse your brandy with spices, such as cinnamon or a few cardamom pods, to add complexity.<br/><br/>
+
+							<strong>Chill (Optional):</strong><br/>
+							For a slightly cooler version, you can chill the mixture in the refrigerator for 30 minutes or serve immediately, depending on preference.<br/><br/>
+
+							<strong>Serve with Elegance:</strong><br/>
+							Pour the mixture into a fine glass, such as a small coupe or cordial glass.<br/><br/>
+
+							<strong>Garnish:</strong><br/>
+							Add a dollop of freshly whipped cream on top of the Advocaat. For extra luxury, lightly dust with freshly grated nutmeg or cinnamon.
+							For an extra decadent touch, garnish with edible gold leaf, grated dark chocolate, or a small twist of orange zest.<br/><br/><br/><br/>
+
+
+
+							<strong>Enjoy:</strong><br/>
+							Sip slowly and savor the creamy, luxurious texture of this elevated Advocaat. Ideal as an after-dinner indulgence or a special treat for a refined occasion.
+						</h2>
+					</div>
+				</div>
+				<h2><br/></h2>
+			</div>
+			
+        </section>
+        
+        <section id="page3" style="display:none;height:calc(100% - 190px);">
+			<div style="width:calc(100% - 400px);height: 100%;">
+				<div>
+					<h2 class="text bold" style="font-size:80px;">About Us</h2>
+				</div>
+
+				<h2 class="text bold" style="font-size:60px;text-decoration: underline;text-align: left;width: 100%;">Our history</h2>
+				<p class="text montagu-slab medium" style="font-size:24px;text-align: justify;">
+					<strong>Pleasure.me</strong> was born on march the 10th, 2025. It was created by two highschool friends who wanted to combine two passions : coding and drinking. Seeing their friends struggling with cooking alcohol, they decided to create Pleasure.me. After days of development, the website was born. Starting with traditional alcoholic main courses, we now offer a important variety of desserts and cocktails too! <br/>Enjoy!
+				</p>
+					
+				<h2 class="text bold" style="font-size:60px;text-decoration: underline;text-align: left;width: 100%;">Our values</h2>
+				<p class="text montagu-slab medium" style="font-size:24px;text-align: justify;">
+					<strong>Pleasure.me</strong> has one simple objective : to empower uneducated folks to start living ! By teaching them how not only to drink but also to eat the greatest thing that has ever happened on Earth, the most important reason to live, every day that God made: Alcohol. Here, every single recipe is for those over 18, or 21 if you live in ‘Murica. Between us, if you didn’t start drinking at 16, we feel sorry for you. Sadly, those damn laws prevent us from saying that aloud, so we had to keep our mouth shut. 
+				</p>
+				
+				<h2 class="text bold" style="font-size:60px;text-align: center;width: 100%;">Contact us</h2>
+				<p class="text montagu-slab medium" style="font-size:24px;text-align: left;">
+					<strong>Pleasure.me</strong> is present on the main socials : Instagram, YouTube, Facebook, LinkedIn and Twitter.<br/><br/>To apply for a non-existent job, please send us an e-mail at <span style="text-decoration: underline;">jobs@pleasure.me</span> .<br/><br/>For any commercial inquiries, contact us at <span style="text-decoration: underline;">business@pleasure.me</span> .
+				</p>
+
+				<h2 class="text bold" style="font-size:40px;text-align: center;width: 100%;">Legal mentions</h2>
+				<p class="text montagu-slab medium" style="font-size:24px;text-align: left;">
+					We’ve got no legal mentions ‘cause we’re not rich enough to afford a lawyer :&#x28;
+				</p>
+
+				<h2 class="text bold" style="font-size:40px;text-align: center;width: 100%;">Sources</h2>
+				<p class="text montagu-slab medium" style="font-size:24px;text-align: left;">
+					For all alcohol content : <a href="https://chatgpt.com/" target="_blank" style="text-decoration: underline; color: #ffffff;">Chatgpt</a>, <a href="https://wikipedia.org" target="_blank" style="text-decoration: underline; color: #ffffff;">Wikipedia</a>, <a href="https://forbes.com" target="_blank" style="text-decoration: underline; color: #ffffff;">Forbes</a>, <a href="https://geldermann.de" target="_blank" style="text-decoration: underline; color: #ffffff;">Geldermann</a>, and many more. <br/><br/>
+
+					Coding ressources : Our Mind
+
+
+				</p>
+
+				<h2><br/></h2>
+				<h2><br/></h2>
+				<h2><br/></h2>
+			</div>
+        </section>
+        
+        <section id="page4" style="display:none;height:calc(100% - 190px);">
+			<img src="Images/Image18.png" style="margin: 0;height: 60%;"/>
+			<div style="display: flex;justify-content: center;flex-direction: row;align-items: center;gap: 60px;">
+				<button class="btnSuprise text bold" style="font-size: 40px;margin: 0;" onclick="ChangePage(0)">I’m 18, stop!</button>
+				<a class="text bold" style="font-size: 36px;margin: 0;text-decoration: underline;" href="../Site(Additionnal)/Main.html">That’s right, I’m underaged :&#x28;</a>
+			</div>
+			
+		</section>
+        
+        <footer>
+        	<h4 class="foottext text extrabold">18+ only</h4>
+        </footer>
+    </body>
+</html>
